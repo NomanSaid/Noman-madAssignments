@@ -1,0 +1,141 @@
+//Program no 1
+var num=6859859;
+let temp=num
+let index=parseInt(prompt("Enter the kth digit to print : "));
+for(let i=0;i<index;i++)
+{
+    num=temp%10;
+    temp=temp/10;
+
+}
+console.log("The kth digit from last is : " + parseInt(num));
+
+
+
+
+// Program no 2
+let num="898658";
+let arr=[...value]
+console.log(arr);
+function SumOfArr(sum,num2)
+{
+  return Number(sum)+ Number(num2);
+}
+let summedarr=arr.reduce(SumOfArr);
+console.log("Sum of all digits is : " + summedarr);
+
+
+
+
+// Program no 3
+let num="567935";
+let arr=[...num]
+console.log(arr);
+function SumOfEven(num2)
+{
+if(num2%2==0)
+   {
+        return num2;
+    }
+      }
+let evenNum=arr.filter(SumOfEven);
+console.log("Even numbers are: " + evenNum);
+function SumOfArray(sum,num3)
+ {
+     return Number(sum)+ Number(num3);
+ }
+let sumarr=evenNum.reduce(SumOfArray);
+console.log("Sum of even digits is : " + sumarr);
+
+
+
+
+// Program no 4
+let number=parseInt(prompt("Enter value to Calculate :"));
+function CalculateSquare(n1)
+ {
+    return n1**2;
+ }
+function CalculateCube(n2)
+ {
+     return n2**3;
+ }
+let squaredNumber=CalculateSquare(number);
+let cubedNumber=CalculateCube(number);
+console.log("Square of a number is : "+ squaredNumber);
+console.log("Cube of a number is : "+ cubedNumber);
+
+
+
+
+// Program no 05
+var char="";
+let string=prompt("Enter the string");
+let number=prompt("Enter the Number");
+for(var i=0;i<string.length;i++)
+ {
+      char=string.charAt(i);
+   if(char=="A" || char=="E" || char=="I" || char=="O" || char=="U" )
+    {
+        break;
+    }
+ }
+if(i<string.length)
+ {
+    console.log("Position in the string of the left-most vowel is : " + (i+1));
+ }
+else
+ {
+    console.log("***No vowel found at left-most position***");
+ }
+let reversedNumber=number.toString().split('').reverse().join('');
+console.log("The number with its digits in the reverse order is : " + reversedNumber);
+
+
+
+
+// Program no 06
+var randomNumber=Math.floor(Math.random()*10);
+console.log(randomNumber);
+let guessNumber=prompt("Enter the Guessed Number : ");
+if(guessNumber==randomNumber)
+ {
+     console.log("You are right Dude!");
+ }
+else
+ {
+     console.log("You guessed wrong Dude!");
+ }
+
+
+
+
+// Program no 07
+let arr=[10,4,33,7];
+let lastPosition=arr.length-1;
+if(arr[0]==10)
+ {
+     console.log("10 appears at 1st Position : ");
+ }
+else if(arr[lastPosition]==10)
+ {
+     console.log("10 appears at last Position : ");
+ }
+else
+ {
+     console.log("Sorry, 10 is not present in the array :) ");
+
+ }
+
+
+
+
+// Program no 08
+let string=prompt("Enter a String : ");
+string=string.split('').sort().join('');
+console.log("letters in alphabetical order are : " + string);
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
