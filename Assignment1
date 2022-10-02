@@ -1,4 +1,4 @@
-Program no 1
+//Program no 1
 var num=123456;
 let temp=num
 let index=parseInt(prompt("Enter the kth digit to print : "));
