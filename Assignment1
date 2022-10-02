@@ -1,5 +1,5 @@
 //Program no 1
-var num=123456;
+var num=6859859;
 let temp=num
 let index=parseInt(prompt("Enter the kth digit to print : "));
 for(let i=0;i<index;i++)
