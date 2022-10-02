@@ -1,0 +1,11 @@
+Program no 1
+var num=123456;
+let temp=num
+let index=parseInt(prompt("Enter the kth digit to print : "));
+for(let i=0;i<index;i++)
+{
+    num=temp%10;
+    temp=temp/10;
+
+}
+console.log("The kth digit from last is : " + parseInt(num));
