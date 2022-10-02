@@ -95,36 +95,47 @@ console.log("The number with its digits in the reverse order is : " + reversedNu
 
 
 // Program no 06
-// var randomNum=Math.floor(Math.random()*10);
-// console.log(randomNum);
-// let guessNum=prompt("Enter your Guess Number : ");
-// if(guessNum==randomNum)
-// {
-//     console.log("YOU WIN");
-// }
-// else
-// {
-//     console.log("NOT MATCHED");
-// }
+var randomNumber=Math.floor(Math.random()*10);
+console.log(randomNumber);
+let guessNumber=prompt("Enter the Guessed Number : ");
+if(guessNumber==randomNumber)
+ {
+     console.log("You are right Dude!");
+ }
+else
+ {
+     console.log("You guessed wrong Dude!");
+ }
+
+
+
 
 // Program no 07
-// let array=[11,2,3,1];
-// let lastPos=array.length-1;
-// if(array[0]==10)
-// {
-//     console.log("Yes 10 appears at 1st Position : ");
-// }
-// else if(array[lastPos]==10)
-// {
-//     console.log("Yes 10 appears at last Position : ");
-// }
-// else
-// {
-//     console.log("10 is not present in array ! ");
+let arr=[10,4,33,7];
+let lastPosition=arr.length-1;
+if(arr[0]==10)
+ {
+     console.log("10 appears at 1st Position : ");
+ }
+else if(arr[lastPosition]==10)
+ {
+     console.log("10 appears at last Position : ");
+ }
+else
+ {
+     console.log("Sorry, 10 is not present in the array :) ");
 
-// }
+ }
 
-// // Program no 08
-// let str=prompt("Enter the string to print in alhabetical order : ");
-// str=str.split('').sort().join('');
-// console.log("String in alphabetical order is : " + str);
+
+
+
+// Program no 08
+let string=prompt("Enter a String : ");
+string=string.split('').sort().join('');
+console.log("letters in alphabetical order are : " + string);
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
